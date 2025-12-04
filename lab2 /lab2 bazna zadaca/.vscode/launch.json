@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Lab1Application<lab>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "mk.ukim.finki.wp.lab.Lab1Application",
+            "projectName": "lab",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

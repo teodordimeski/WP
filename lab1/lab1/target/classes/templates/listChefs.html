@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Chefs</title>
+</head>
+<body>
+<h1>Welcome to Our Restaurant</h1>
+<form action="/dish" method="POST" th:object="${chefs}">
+    <div th:each="chef : ${chefs}">
+        <input type="radio" name="chefId" th:value="${chef.id}" />
+        Name: <span th:text="${chef.firstName}"></span> <span th:text="${chef.lastName}"></span>,
+        Bio: <span th:text="${chef.bio}"></span><br/>
+    </div>
+    <input type="submit" value="Next" />
+</form>
+</body>
+</html>

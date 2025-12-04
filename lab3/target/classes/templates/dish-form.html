@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${dish != null ? 'Edit Dish' : 'Add Dish'}">Dish Form</title>
+</head>
+<body>
+<h1 th:text="${dish != null ? 'Edit Dish' : 'Add Dish'}">Dish Form</h1>
+
+<div th:if="${error}" style="color: red;">
+    <p th:text="${error}"></p>
+</div>
+
+<form th:action="${dish != null ? '/dishes/edit/' + dish.id : '/dishes/add'}" method="POST">
+    <label>Dish ID: <input type="text" name="dishId" th:value="${dish != null ? dish.dishId : ''}" required/></label><br/>
+    <label>Name: <input type="text" name="name" th:value="${dish != null ? dish.name : ''}" required/></label><br/>
+    <label>Cuisine:
+        <select name="cuisine" required>
+            <option value="" disabled th:selected="${dish == null}">Select cuisine</option>
+            <option th:each="cuisine : ${cuisines}"
+                    th:value="${cuisine.name()}"
+                    th:text="${cuisine.label}"
+                    th:selected="${dish != null and dish.cuisine == cuisine}">
+            </option>
+        </select>
+    </label><br/>
+    <label>Preparation Time (min): <input type="number" name="preparationTime" th:value="${dish != null ? dish.preparationTime : ''}" required/></label><br/>
+    <input type="submit" th:value="${dish != null ? 'Update Dish' : 'Add Dish'}"/>
+    <a th:href="@{/dishes}">Cancel</a>
+</form>
+</body>
+</html>
+

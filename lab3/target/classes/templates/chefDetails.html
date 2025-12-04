@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Chef Details</title>
+</head>
+<body>
+<h1>Chef: <span th:text="${chef.firstName}"></span> <span th:text="${chef.lastName}"></span></h1>
+<p>Bio: <span th:text="${chef.bio}"></span></p>
+
+<h2>Dishes prepared:</h2>
+<ul>
+  <li th:each="dish : ${chef.dishes}" th:text="${dish.name} + ' (' + dish.cuisine.label + ', ' + dish.preparationTime + ' min)'"></li>
+</ul>
+
+<a th:href="@{/listChefs}">Back to Chefs</a>
+</body>
+</html>
