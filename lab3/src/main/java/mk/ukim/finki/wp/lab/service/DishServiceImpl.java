@@ -3,6 +3,8 @@ package mk.ukim.finki.wp.lab.service;
 import mk.ukim.finki.wp.lab.model.Cuisine;
 import mk.ukim.finki.wp.lab.model.Dish;
 import mk.ukim.finki.wp.lab.repository.DishRepository;
+import mk.ukim.finki.wp.lab.repository.ChefRepository;
+import mk.ukim.finki.wp.lab.model.Chef;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,9 +13,11 @@ import java.util.List;
 public class DishServiceImpl implements DishService {
 
     private final DishRepository dishRepository;
+    private final ChefRepository chefRepository;
 
-    public DishServiceImpl(DishRepository dishRepository) {
+    public DishServiceImpl(DishRepository dishRepository, ChefRepository chefRepository) {
         this.dishRepository = dishRepository;
+        this.chefRepository = chefRepository;
     }
 
     @Override
@@ -22,8 +26,8 @@ public class DishServiceImpl implements DishService {
     }
 
     @Override
-    public Dish findByDishId(String dishId) {
-        return dishRepository.findByDishId(dishId);
+    public Dish findByDishId(Long dishId) {
+        return dishRepository.findById(dishId).orElse(null);
     }
 
     @Override
@@ -32,19 +36,31 @@ public class DishServiceImpl implements DishService {
     }
 
     @Override
-    public Dish create(String dishId, String name, Cuisine cuisine, int preparationTime) {
-        Dish dish = new Dish(dishId, name, cuisine, preparationTime);
+    public Dish create(String name, Cuisine cuisine, int preparationTime, Long chefId) {
+        Dish dish = new Dish();
+        dish.setName(name);
+        dish.setCuisine(cuisine);
+        dish.setPreparationTime(preparationTime);
+        if (chefId != null) {
+            Chef chef = chefRepository.findById(chefId).orElse(null);
+            dish.setChef(chef);
+        }
         return dishRepository.save(dish);
     }
 
     @Override
-    public Dish update(Long id, String dishId, String name, Cuisine cuisine, int preparationTime) {
-        Dish dish = dishRepository.findById(id).orElse(null);
+    public Dish update(Long dishId, String name, Cuisine cuisine, int preparationTime, Long chefId) {
+        Dish dish = dishRepository.findById(dishId).orElse(null);
         if (dish != null) {
-            dish.setDishId(dishId);
             dish.setName(name);
             dish.setCuisine(cuisine);
             dish.setPreparationTime(preparationTime);
+            if (chefId != null) {
+                Chef chef = chefRepository.findById(chefId).orElse(null);
+                dish.setChef(chef);
+            } else {
+                dish.setChef(null);
+            }
             return dishRepository.save(dish);
         }
         return null;

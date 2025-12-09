@@ -46,14 +46,14 @@ public class DishController {
     }
 
     @PostMapping("/add")
-    public String saveDish(@RequestParam String dishId,
-                           @RequestParam String name,
+    public String saveDish(@RequestParam String name,
                            @RequestParam String cuisine,
                            @RequestParam int preparationTime,
+                           @RequestParam(required = false) Long chefId,
                            Model model) {
         try {
             Cuisine selectedCuisine = Cuisine.valueOf(cuisine);
-            dishService.create(dishId, name, selectedCuisine, preparationTime);
+            dishService.create(name, selectedCuisine, preparationTime, chefId);
             return "redirect:/dishes";
         } catch (IllegalArgumentException ex) {
             prepareDishForm(model, null);
@@ -83,18 +83,18 @@ public class DishController {
     }
 
     @PostMapping("/edit/{id}")
-    public String editDish(@PathVariable Long id,
-                           @RequestParam String dishId,
+    public String editDish(@PathVariable("id") Long dishId,
                            @RequestParam String name,
                            @RequestParam String cuisine,
                            @RequestParam int preparationTime,
+                           @RequestParam(required = false) Long chefId,
                            Model model) {
         try {
             Cuisine selectedCuisine = Cuisine.valueOf(cuisine);
-            dishService.update(id, dishId, name, selectedCuisine, preparationTime);
+            dishService.update(dishId, name, selectedCuisine, preparationTime, chefId);
             return "redirect:/dishes";
         } catch (IllegalArgumentException ex) {
-            Dish dish = dishService.findById(id);
+            Dish dish = dishService.findById(dishId);
             prepareDishForm(model, dish);
             model.addAttribute("error", "Invalid cuisine selected");
             return "dish-form";
@@ -108,7 +108,7 @@ public class DishController {
     }
 
     @PostMapping("/add-to-chef")
-    public String addDishToChef(@RequestParam Long chefId, @RequestParam String dishId) {
+    public String addDishToChef(@RequestParam Long chefId, @RequestParam Long dishId) {
         Chef chef = chefService.addDishToChef(chefId, dishId);
         if (chef != null) {
             return "redirect:/listChefs";
@@ -130,6 +130,7 @@ public class DishController {
     private void prepareDishForm(Model model, Dish dish) {
         model.addAttribute("dish", dish);
         model.addAttribute("cuisines", Cuisine.values());
+        model.addAttribute("chefs", chefService.listChefs());
     }
 }
 

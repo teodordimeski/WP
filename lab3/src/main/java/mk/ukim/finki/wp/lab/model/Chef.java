@@ -1,69 +1,34 @@
 package mk.ukim.finki.wp.lab.model;
 
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.List;
 import java.util.Objects;
 
 
-@Data// includes: @Getter @Setter @ToString @EqualsAndHashCode @RequiredArgsConstructor
+@Entity
+@Data
+@Table(name = "chefs")
 public class Chef {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    
     private String firstName;
     private String lastName;
     private String bio;
+    
+    @OneToMany(mappedBy = "chef", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Dish> dishes;
 
     public Chef() {
     }
 
-    public Chef(Long id, String firstName, String lastName, String bio, List<Dish> dishes) {
-        this.id = id;
+    public Chef(String firstName, String lastName, String bio, List<Dish> dishes) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.bio = bio;
-        this.dishes = dishes;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public String getBio() {
-        return bio;
-    }
-
-    public List<Dish> getDishes() {
-        return dishes;
-
-
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public void setBio(String bio) {
-        this.bio = bio;
-    }
-
-    public void setDishes(List<Dish> dishes) {
         this.dishes = dishes;
     }
 

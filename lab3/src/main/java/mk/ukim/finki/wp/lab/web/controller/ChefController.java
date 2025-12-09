@@ -13,9 +13,13 @@ public class ChefController {
 
     private final ChefService chefService;
 
+    
+
     public ChefController(ChefService chefService) {
         this.chefService = chefService;
     }
+
+    
 
     @GetMapping("/chefDetails")
     public String getChefDetails(@RequestParam(required = false) Long chefId,
@@ -40,7 +44,7 @@ public class ChefController {
 
     @PostMapping("/chefDetails")
     public String addDishToChef(@RequestParam Long chefId,
-                                @RequestParam String dishId,
+                                @RequestParam Long dishId,
                                 Model model) {
         try {
             Chef chef = chefService.addDishToChef(chefId, dishId);

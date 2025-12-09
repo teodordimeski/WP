@@ -7,5 +7,7 @@ import java.util.List;
 public interface ChefService {
     List<Chef> listChefs();
     Chef findById(Long id);
-    Chef addDishToChef(Long chefId, String dishId);
+    Chef addDishToChef(Long chefId, Long dishId);
+
+    Chef create(String firstName, String lastName, String bio);
 }

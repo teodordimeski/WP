@@ -9,7 +9,7 @@
 <form action="/chefDetails" method="POST" th:object="${selectedChef}">
   <input type="hidden" name="chefId" th:value="${selectedChef.id}" />
   <div th:each="dish : ${dishes}">
-    <input type="radio" name="dishId" th:value="${dish.dishId}" />
+    <input type="radio" name="dishId" th:value="${dish.id}" />
     <span th:text="${dish.name}"></span> (<span th:text="${dish.cuisine.label}"></span>, <span th:text="${dish.preparationTime}"></span> min)<br/>
   </div>
   <input type="submit" value="Add Dish" />
