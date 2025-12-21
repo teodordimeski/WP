@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Chefs</title>
+</head>
+<body>
+<h1>Welcome to Our Restaurant</h1>
+<div>
+    <span sec:authorize="isAuthenticated()">
+        Logged in as <span sec:authentication="name"></span> | <a th:href="@{/logout}">Logout</a>
+    </span>
+    <span sec:authorize="isAnonymous()">
+        <a th:href="@{/login}">Login</a>
+    </span>
+</div>
+<form action="/dishes/select-chef" method="POST" th:object="${chefs}">
+    <div th:each="chef : ${chefs}">
+        <input type="radio" name="chefId" th:value="${chef.id}" />
+        Name: <span th:text="${chef.firstName}"></span> <span th:text="${chef.lastName}"></span>,
+        Bio: <span th:text="${chef.bio}"></span><br/>
+    </div>
+    <input type="submit" value="Next" />
+</form>
+</body>
+</html>

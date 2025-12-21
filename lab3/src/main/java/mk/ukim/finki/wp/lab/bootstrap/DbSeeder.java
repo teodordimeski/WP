@@ -5,6 +5,10 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
  
+// Any Spring @Component that implements CommandLineRunner is executed after the application context loads, automatically.
+// No controller calls it.
+// No manual invocation.
+// Spring runs this for you.
 
 @Component
 public class DbSeeder implements CommandLineRunner {

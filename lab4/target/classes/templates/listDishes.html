@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+    <meta charset="UTF-8">
+    <title>Dishes List</title>
+</head>
+<body>
+<h1>Dishes List</h1>
+
+<div th:if="${error}" style="color: red;">
+    <p th:text="${error}"></p>
+</div>
+
+<div>
+    <span sec:authorize="isAuthenticated()">
+        Logged in as <span sec:authentication="name"></span> | <a th:href="@{/logout}">Logout</a>
+    </span>
+    <span sec:authorize="isAnonymous()">
+        <a th:href="@{/login}">Login</a>
+    </span>
+</div>
+
+<div>
+    <a sec:authorize="hasRole('ADMIN')" th:href="@{/dishes/add}">Add New Dish</a>
+</div>
+
+<table border="1" cellpadding="5">
+    <thead>
+    <tr>
+        <th>Dish ID</th>
+        <th>Name</th>
+        <th>Cuisine</th>
+        <th>Preparation Time (min)</th>
+        <th>Chef</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="dish : ${dishes}">
+        <td th:text="${dish.id}"></td>
+        <td th:text="${dish.name}"></td>
+        <td th:text="${dish.cuisine.label}"></td>
+        <td th:text="${dish.preparationTime}"></td>
+        <td th:text="${dish.chef != null ? dish.chef.firstName + ' ' + dish.chef.lastName : 'N/A'}"></td>
+        <td>
+            <a sec:authorize="hasRole('ADMIN')" th:href="@{/dishes/edit/{id}(id=${dish.id})}">Edit</a>
+            <span sec:authorize="hasRole('ADMIN')"> | <a th:href="@{/dishes/delete/{id}(id=${dish.id})}">Delete</a></span>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
+

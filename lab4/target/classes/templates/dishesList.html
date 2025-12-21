@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Dish to Chef</title>
+</head>
+<body>
+<h1>Select Dish for Chef</h1>
+<form action="/chefDetails" method="POST" th:object="${selectedChef}">
+  <input type="hidden" name="chefId" th:value="${selectedChef.id}" />
+  <div th:each="dish : ${dishes}">
+    <input type="radio" name="dishId" th:value="${dish.id}" />
+    <span th:text="${dish.name}"></span> (<span th:text="${dish.cuisine.label}"></span>, <span th:text="${dish.preparationTime}"></span> min)<br/>
+  </div>
+  <input type="submit" value="Add Dish" />
+</form>
+
+<h3>Selected Chef:</h3>
+<p>ID: <span th:text="${selectedChef.id}"></span></p>
+<p>Name: <span th:text="${selectedChef.firstName}"></span> <span th:text="${selectedChef.lastName}"></span></p>
+<p>Bio: <span th:text="${selectedChef.bio}"></span></p>
+</body>
+</html>

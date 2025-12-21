@@ -1,0 +1,16 @@
+/Users/teodordimeski/Documents/Faks/semestar V/veb programiranje/labs/lab4/src/main/java/mk/ukim/finki/wp/lab/Lab1Application.java
+/Users/teodordimeski/Documents/Faks/semestar V/veb programiranje/labs/lab4/src/main/java/mk/ukim/finki/wp/lab/bootstrap/DataHolder.java
+/Users/teodordimeski/Documents/Faks/semestar V/veb programiranje/labs/lab4/src/main/java/mk/ukim/finki/wp/lab/bootstrap/DbSeeder.java
+/Users/teodordimeski/Documents/Faks/semestar V/veb programiranje/labs/lab4/src/main/java/mk/ukim/finki/wp/lab/config/WebSecurityConfig.java
+/Users/teodordimeski/Documents/Faks/semestar V/veb programiranje/labs/lab4/src/main/java/mk/ukim/finki/wp/lab/model/Chef.java
+/Users/teodordimeski/Documents/Faks/semestar V/veb programiranje/labs/lab4/src/main/java/mk/ukim/finki/wp/lab/model/Cuisine.java
+/Users/teodordimeski/Documents/Faks/semestar V/veb programiranje/labs/lab4/src/main/java/mk/ukim/finki/wp/lab/model/Dish.java
+/Users/teodordimeski/Documents/Faks/semestar V/veb programiranje/labs/lab4/src/main/java/mk/ukim/finki/wp/lab/repository/ChefRepository.java
+/Users/teodordimeski/Documents/Faks/semestar V/veb programiranje/labs/lab4/src/main/java/mk/ukim/finki/wp/lab/repository/DishRepository.java
+/Users/teodordimeski/Documents/Faks/semestar V/veb programiranje/labs/lab4/src/main/java/mk/ukim/finki/wp/lab/service/ChefService.java
+/Users/teodordimeski/Documents/Faks/semestar V/veb programiranje/labs/lab4/src/main/java/mk/ukim/finki/wp/lab/service/ChefServiceImpl.java
+/Users/teodordimeski/Documents/Faks/semestar V/veb programiranje/labs/lab4/src/main/java/mk/ukim/finki/wp/lab/service/DishService.java
+/Users/teodordimeski/Documents/Faks/semestar V/veb programiranje/labs/lab4/src/main/java/mk/ukim/finki/wp/lab/service/DishServiceImpl.java
+/Users/teodordimeski/Documents/Faks/semestar V/veb programiranje/labs/lab4/src/main/java/mk/ukim/finki/wp/lab/web/controller/ChefController.java
+/Users/teodordimeski/Documents/Faks/semestar V/veb programiranje/labs/lab4/src/main/java/mk/ukim/finki/wp/lab/web/controller/DishController.java
+/Users/teodordimeski/Documents/Faks/semestar V/veb programiranje/labs/lab4/src/main/java/mk/ukim/finki/wp/lab/web/controller/LoginController.java
