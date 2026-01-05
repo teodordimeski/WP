@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a033aaaf-ead6-4d92-8eda-b71c038fd8e6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/main/java/mk/ukim/finki/wp/exam/example/ExampleApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/main/java/mk/ukim/finki/wp/exam/example/config/DataInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/main/java/mk/ukim/finki/wp/exam/example/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/main/java/mk/ukim/finki/wp/exam/example/model/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/main/java/mk/ukim/finki/wp/exam/example/model/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/main/java/mk/ukim/finki/wp/exam/example/model/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/main/java/mk/ukim/finki/wp/exam/example/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/main/java/mk/ukim/finki/wp/exam/example/model/exceptions/InvalidCategoryIdException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/main/java/mk/ukim/finki/wp/exam/example/model/exceptions/InvalidProductIdException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/main/java/mk/ukim/finki/wp/exam/example/model/exceptions/InvalidUsernameException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/main/java/mk/ukim/finki/wp/exam/example/repository/CategoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/main/java/mk/ukim/finki/wp/exam/example/repository/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/main/java/mk/ukim/finki/wp/exam/example/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/main/java/mk/ukim/finki/wp/exam/example/service/CategoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/main/java/mk/ukim/finki/wp/exam/example/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/main/java/mk/ukim/finki/wp/exam/example/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/main/java/mk/ukim/finki/wp/exam/example/service/impl/CategoryServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/main/java/mk/ukim/finki/wp/exam/example/service/impl/ProductServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/main/java/mk/ukim/finki/wp/exam/example/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/main/java/mk/ukim/finki/wp/exam/example/web/ProductsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/main/resources/application-test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/main/resources/templates/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/main/resources/templates/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/test/java/mk/ukim/finki/wp/exam/example/SeleniumScenarioTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/test/java/mk/ukim/finki/wp/exam/example/selenium/AbstractPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/test/java/mk/ukim/finki/wp/exam/example/selenium/AddOrEditProduct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/test/java/mk/ukim/finki/wp/exam/example/selenium/ItemsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/test/java/mk/ukim/finki/wp/exam/example/selenium/LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/test/java/mk/ukim/finki/wp/exam/util/CodeExtractor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/test/java/mk/ukim/finki/wp/exam/util/ExamAssert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/test/java/mk/ukim/finki/wp/exam/util/ExamAssertionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/test/java/mk/ukim/finki/wp/exam/util/FailedSubmissionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/example/src/test/java/mk/ukim/finki/wp/exam/util/SubmissionHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/main/java/mk/ukim/finki/wp/june2022/g1/June2022Group1Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/main/java/mk/ukim/finki/wp/june2022/g1/config/DataInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/main/java/mk/ukim/finki/wp/june2022/g1/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/main/java/mk/ukim/finki/wp/june2022/g1/model/OSType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/main/java/mk/ukim/finki/wp/june2022/g1/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/main/java/mk/ukim/finki/wp/june2022/g1/model/VirtualServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/main/java/mk/ukim/finki/wp/june2022/g1/model/exceptions/InvalidUserIdException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/main/java/mk/ukim/finki/wp/june2022/g1/model/exceptions/InvalidVirtualMachineIdException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/main/java/mk/ukim/finki/wp/june2022/g1/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/main/java/mk/ukim/finki/wp/june2022/g1/repository/VirtualServerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/main/java/mk/ukim/finki/wp/june2022/g1/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/main/java/mk/ukim/finki/wp/june2022/g1/service/VirtualServerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/main/java/mk/ukim/finki/wp/june2022/g1/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/main/java/mk/ukim/finki/wp/june2022/g1/service/impl/VirtualServerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/main/java/mk/ukim/finki/wp/june2022/g1/web/VirtualServerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/main/resources/application-test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/main/resources/templates/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/main/resources/templates/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/test/java/mk/ukim/finki/wp/exam/util/CodeExtractor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/test/java/mk/ukim/finki/wp/exam/util/ExamAssert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/test/java/mk/ukim/finki/wp/exam/util/ExamAssertionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/test/java/mk/ukim/finki/wp/exam/util/FailedSubmissionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/test/java/mk/ukim/finki/wp/exam/util/LoadSolution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/test/java/mk/ukim/finki/wp/exam/util/SubmissionHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/test/java/mk/ukim/finki/wp/june2022/g1/SeleniumScenarioTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/test/java/mk/ukim/finki/wp/june2022/g1/selenium/AbstractPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/test/java/mk/ukim/finki/wp/june2022/g1/selenium/AddOrEditForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/test/java/mk/ukim/finki/wp/june2022/g1/selenium/ItemsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/src/test/java/mk/ukim/finki/wp/june2022/g1/selenium/LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/target/classes/application-test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/target/classes/templates/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/jun2022/target/classes/templates/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/main/java/mk/ukim/finki/wp/kol2022/g1/Kol2022Group1Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/main/java/mk/ukim/finki/wp/kol2022/g1/config/DataInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/main/java/mk/ukim/finki/wp/kol2022/g1/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/main/java/mk/ukim/finki/wp/kol2022/g1/model/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/main/java/mk/ukim/finki/wp/kol2022/g1/model/EmployeeType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/main/java/mk/ukim/finki/wp/kol2022/g1/model/Skill.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/main/java/mk/ukim/finki/wp/kol2022/g1/model/exceptions/InvalidEmployeeIdException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/main/java/mk/ukim/finki/wp/kol2022/g1/model/exceptions/InvalidSkillIdException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/main/java/mk/ukim/finki/wp/kol2022/g1/repository/EmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/main/java/mk/ukim/finki/wp/kol2022/g1/repository/SkillRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/main/java/mk/ukim/finki/wp/kol2022/g1/service/EmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/main/java/mk/ukim/finki/wp/kol2022/g1/service/SkillService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/main/java/mk/ukim/finki/wp/kol2022/g1/service/impl/EmployeeServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/main/java/mk/ukim/finki/wp/kol2022/g1/service/impl/SkillServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/main/java/mk/ukim/finki/wp/kol2022/g1/web/EmployeeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/main/resources/application-test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/main/resources/templates/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/main/resources/templates/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/test/java/mk/ukim/finki/wp/exam/util/CodeExtractor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/test/java/mk/ukim/finki/wp/exam/util/ExamAssert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/test/java/mk/ukim/finki/wp/exam/util/ExamAssertionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/test/java/mk/ukim/finki/wp/exam/util/FailedSubmissionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/test/java/mk/ukim/finki/wp/exam/util/LoadSolution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/test/java/mk/ukim/finki/wp/exam/util/SubmissionHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/test/java/mk/ukim/finki/wp/kol2022/g1/SeleniumScenarioTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/test/java/mk/ukim/finki/wp/kol2022/g1/selenium/AbstractPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/test/java/mk/ukim/finki/wp/kol2022/g1/selenium/AddOrEditForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/test/java/mk/ukim/finki/wp/kol2022/g1/selenium/ItemsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g1/src/test/java/mk/ukim/finki/wp/kol2022/g1/selenium/LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/g2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/main/java/mk/ukim/finki/wp/kol2022/g2/Kol2022Group2Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/main/java/mk/ukim/finki/wp/kol2022/g2/config/DataInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/main/java/mk/ukim/finki/wp/kol2022/g2/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/main/java/mk/ukim/finki/wp/kol2022/g2/model/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/main/java/mk/ukim/finki/wp/kol2022/g2/model/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/main/java/mk/ukim/finki/wp/kol2022/g2/model/StudentType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/main/java/mk/ukim/finki/wp/kol2022/g2/model/exceptions/InvalidCourseIdException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/main/java/mk/ukim/finki/wp/kol2022/g2/model/exceptions/InvalidStudentIdException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/main/java/mk/ukim/finki/wp/kol2022/g2/repository/CourseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/main/java/mk/ukim/finki/wp/kol2022/g2/repository/StudentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/main/java/mk/ukim/finki/wp/kol2022/g2/service/CourseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/main/java/mk/ukim/finki/wp/kol2022/g2/service/StudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/main/java/mk/ukim/finki/wp/kol2022/g2/service/impl/CourseServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/main/java/mk/ukim/finki/wp/kol2022/g2/service/impl/StudentServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/main/java/mk/ukim/finki/wp/kol2022/g2/web/StudentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/main/resources/application-test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/main/resources/templates/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/main/resources/templates/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/test/java/mk/ukim/finki/wp/exam/util/CodeExtractor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/test/java/mk/ukim/finki/wp/exam/util/ExamAssert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/test/java/mk/ukim/finki/wp/exam/util/ExamAssertionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/test/java/mk/ukim/finki/wp/exam/util/FailedSubmissionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/test/java/mk/ukim/finki/wp/exam/util/LoadSolution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/test/java/mk/ukim/finki/wp/exam/util/SubmissionHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/test/java/mk/ukim/finki/wp/kol2022/g2/SeleniumScenarioTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/test/java/mk/ukim/finki/wp/kol2022/g2/selenium/AbstractPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/test/java/mk/ukim/finki/wp/kol2022/g2/selenium/AddOrEditForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/test/java/mk/ukim/finki/wp/kol2022/g2/selenium/ItemsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/src/test/java/mk/ukim/finki/wp/kol2022/g2/selenium/LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/target/classes/application-test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/target/classes/templates/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g2/target/classes/templates/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/main/java/mk/ukim/finki/wp/kol2022/g3/Kol2022Group3Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/main/java/mk/ukim/finki/wp/kol2022/g3/config/DataInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/main/java/mk/ukim/finki/wp/kol2022/g3/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/main/java/mk/ukim/finki/wp/kol2022/g3/model/ForumUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/main/java/mk/ukim/finki/wp/kol2022/g3/model/ForumUserType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/main/java/mk/ukim/finki/wp/kol2022/g3/model/Interest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/main/java/mk/ukim/finki/wp/kol2022/g3/model/exceptions/InvalidForumUserIdException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/main/java/mk/ukim/finki/wp/kol2022/g3/model/exceptions/InvalidInterestIdException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/main/java/mk/ukim/finki/wp/kol2022/g3/repository/ForumUserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/main/java/mk/ukim/finki/wp/kol2022/g3/repository/InterestRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/main/java/mk/ukim/finki/wp/kol2022/g3/service/ForumUserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/main/java/mk/ukim/finki/wp/kol2022/g3/service/InterestService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/main/java/mk/ukim/finki/wp/kol2022/g3/service/impl/ForumUserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/main/java/mk/ukim/finki/wp/kol2022/g3/service/impl/InterestServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/main/java/mk/ukim/finki/wp/kol2022/g3/web/ForumUsersController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/main/resources/application-test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/main/resources/templates/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/main/resources/templates/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/test/java/mk/ukim/finki/wp/exam/util/CodeExtractor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/test/java/mk/ukim/finki/wp/exam/util/ExamAssert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/test/java/mk/ukim/finki/wp/exam/util/ExamAssertionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/test/java/mk/ukim/finki/wp/exam/util/FailedSubmissionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/test/java/mk/ukim/finki/wp/exam/util/LoadSolution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/test/java/mk/ukim/finki/wp/exam/util/SubmissionHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/test/java/mk/ukim/finki/wp/kol2022/g3/SeleniumScenarioTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/test/java/mk/ukim/finki/wp/kol2022/g3/selenium/AbstractPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/test/java/mk/ukim/finki/wp/kol2022/g3/selenium/AddOrEditForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/test/java/mk/ukim/finki/wp/kol2022/g3/selenium/ItemsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VP-exams-solved/kol2022-g3/src/test/java/mk/ukim/finki/wp/kol2022/g3/selenium/LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jan2025-g2-task/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jan2025-g2-task/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jan2025-g2-task/src/main/java/mk/ukim/finki/wp/jan2025g2/config/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jan2025-g2-task/src/main/java/mk/ukim/finki/wp/jan2025g2/config/DataInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jan2025-g2-task/src/main/java/mk/ukim/finki/wp/jan2025g2/model/NationalPark.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jan2025-g2-task/src/main/java/mk/ukim/finki/wp/jan2025g2/model/NationalPark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jan2025-g2-task/src/main/java/mk/ukim/finki/wp/jan2025g2/model/ParkLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jan2025-g2-task/src/main/java/mk/ukim/finki/wp/jan2025g2/model/ParkLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jan2025-g2-task/src/main/java/mk/ukim/finki/wp/jan2025g2/model/ParkType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jan2025-g2-task/src/main/java/mk/ukim/finki/wp/jan2025g2/model/ParkType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jan2025-g2-task/src/main/java/mk/ukim/finki/wp/jan2025g2/repository/NationalParkRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jan2025-g2-task/src/main/java/mk/ukim/finki/wp/jan2025g2/repository/NationalParkRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jan2025-g2-task/src/main/java/mk/ukim/finki/wp/jan2025g2/repository/ParkLocationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jan2025-g2-task/src/main/java/mk/ukim/finki/wp/jan2025g2/repository/ParkLocationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jan2025-g2-task/src/main/java/mk/ukim/finki/wp/jan2025g2/service/impl/NationalParkServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jan2025-g2-task/src/main/java/mk/ukim/finki/wp/jan2025g2/service/impl/NationalParkServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jan2025-g2-task/src/main/java/mk/ukim/finki/wp/jan2025g2/service/impl/ParkLocationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jan2025-g2-task/src/main/java/mk/ukim/finki/wp/jan2025g2/service/impl/ParkLocationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jan2025-g2-task/src/main/java/mk/ukim/finki/wp/jan2025g2/web/NationalParkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jan2025-g2-task/src/main/java/mk/ukim/finki/wp/jan2025g2/web/NationalParkController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/main/java/mk/ukim/finki/wp/kol2025g2/Kol2025G2Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/main/java/mk/ukim/finki/wp/kol2025g2/config/DataInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/main/java/mk/ukim/finki/wp/kol2025g2/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/main/java/mk/ukim/finki/wp/kol2025g2/model/SkiResort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/main/java/mk/ukim/finki/wp/kol2025g2/model/SkiSlope.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/main/java/mk/ukim/finki/wp/kol2025g2/model/SlopeDifficulty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/main/java/mk/ukim/finki/wp/kol2025g2/model/exceptions/InvalidSkiResortIdException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/main/java/mk/ukim/finki/wp/kol2025g2/model/exceptions/InvalidSkiSlopeIdException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/main/java/mk/ukim/finki/wp/kol2025g2/repository/SkiResortRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/main/java/mk/ukim/finki/wp/kol2025g2/repository/SkiSlopeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/main/java/mk/ukim/finki/wp/kol2025g2/service/SkiResortService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/main/java/mk/ukim/finki/wp/kol2025g2/service/SkiSlopeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/main/java/mk/ukim/finki/wp/kol2025g2/web/SkiSlopeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/main/resources/application-test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/main/resources/templates/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/main/resources/templates/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/test/java/mk/ukim/finki/wp/exam/util/CodeExtractor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/test/java/mk/ukim/finki/wp/exam/util/ExamAssert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/test/java/mk/ukim/finki/wp/exam/util/ExamAssertionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/test/java/mk/ukim/finki/wp/exam/util/FailedSubmissionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/test/java/mk/ukim/finki/wp/exam/util/LoadSolution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/test/java/mk/ukim/finki/wp/exam/util/SubmissionHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/test/java/mk/ukim/finki/wp/kol2025g2/AbstractPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/test/java/mk/ukim/finki/wp/kol2025g2/AddOrEditSkiSlope.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/test/java/mk/ukim/finki/wp/kol2025g2/ItemsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/test/java/mk/ukim/finki/wp/kol2025g2/LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2025-g2-main/src/test/java/mk/ukim/finki/wp/kol2025g2/SeleniumScenarioTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;teodordimeski&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:teodordimeski/WP.git&quot;,
+    &quot;accountId&quot;: &quot;7fc4e89f-d98f-4a18-9fa0-2a6c711722fe&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="37hqUedw6FEHA8HKPlxTF59M7Lp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.SeleniumScenarioTest.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.June2025G1Application.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/teodordimeski/Documents/Faks/semestar V/veb programiranje/labs/vezbi2025/june2025-g1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="mk.ukim.finki.wp.june2025g1.service" />
+      <recent name="mk.ukim.finki.wp.june2025g1.repository" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SeleniumScenarioTest">
+    <configuration name="SeleniumScenarioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="june2025-g1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mk.ukim.finki.wp.june2025g1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mk.ukim.finki.wp.june2025g1" />
+      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.wp.june2025g1.SeleniumScenarioTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="June2025G1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="june2025-g1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.wp.june2025g1.June2025G1Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SeleniumScenarioTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28238.7" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28238.7" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a033aaaf-ead6-4d92-8eda-b71c038fd8e6" name="Changes" comment="" />
+      <created>1767365674339</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1767365674339</updated>
+      <workItem from="1767365675461" duration="6830000" />
+      <workItem from="1767532089988" duration="4335000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

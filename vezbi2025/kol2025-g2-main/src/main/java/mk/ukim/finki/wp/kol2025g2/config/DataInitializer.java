@@ -1,9 +1,12 @@
 package mk.ukim.finki.wp.kol2025g2.config;
 
+import jakarta.annotation.PostConstruct;
 import mk.ukim.finki.wp.kol2025g2.model.SlopeDifficulty;
 import mk.ukim.finki.wp.kol2025g2.service.SkiResortService;
 import mk.ukim.finki.wp.kol2025g2.service.SkiSlopeService;
+import org.springframework.stereotype.Component;
 
+@Component
 public class DataInitializer {
 
     private final SkiResortService skiResortService;
@@ -21,6 +24,7 @@ public class DataInitializer {
         return SlopeDifficulty.GREEN;
     }
 
+    @PostConstruct
     public void initData() {
         for (int i = 1; i <= 3; i++) {
             this.skiResortService.create("Ski Resort " + i, "Location " + i);
