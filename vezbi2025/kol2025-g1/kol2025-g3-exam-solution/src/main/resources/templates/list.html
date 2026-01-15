@@ -41,7 +41,7 @@
             <th>Actions</th>
         </tr>
         <!-- For each expense you should have one <tr> like below -->
-        <tr class="item" th:each="e : ${page.getContent()}">
+        <tr class="item" th:each="e : ${page}">
             <td th:text="${e.title}"></td>
             <td th:text="${e.dateCreated}"></td>
             <td th:text="${e.amount}"></td>
