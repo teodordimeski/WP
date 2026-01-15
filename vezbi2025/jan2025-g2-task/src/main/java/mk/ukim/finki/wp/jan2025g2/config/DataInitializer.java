@@ -1,12 +1,15 @@
 package mk.ukim.finki.wp.jan2025g2.config;
 
+import jakarta.annotation.PostConstruct;
 import mk.ukim.finki.wp.jan2025g2.model.ParkLocation;
 import mk.ukim.finki.wp.jan2025g2.model.ParkType;
 import mk.ukim.finki.wp.jan2025g2.service.NationalParkService;
 import mk.ukim.finki.wp.jan2025g2.service.ParkLocationService;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component
 public class DataInitializer {
 
     private final NationalParkService nationalParkService;
@@ -24,6 +27,7 @@ public class DataInitializer {
         return ParkType.BIOSPHERE_RESERVE;
     }
 
+    @PostConstruct
     public void initData() {
         for (int i = 1; i <= 3; i++) {
             this.locationService.create("Country " + i, "Continent" + i);

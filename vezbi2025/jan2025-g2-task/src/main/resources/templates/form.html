@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <title>national park Form</title>
 </head>
 <body>
 <!-- The form should submit to NationalParkController.create or NationalParkController.update,
      depending on whether we are creating or editing a national park -->
-<form>
+<form method="post" th:action="@{${park == null ? '/national-parks' : '/national-parks/' + park.id}}">
     <div>
         <label for="name">National Park Name</label>
         <input type="text"
                id="name"
-               name=""
+               name="name"
+               th:value="${park?.name}"
                required>
     </div>
 
@@ -19,7 +20,8 @@
         <label for="areaSize">Area Size (in square meters)</label>
         <input type="number"
                id="areaSize"
-               name=""
+               name="areaSize"
+               th:value="${park?.areaSize}"
                required>
     </div>
 
@@ -27,26 +29,27 @@
         <label for="rating">Rating</label><br/>
         <input type="number"
                id="rating"
-               name=""
+               name="rating"
                step="0.1"
                min="0"
                max="10"
+               th:value="${park?.rating}"
                required>
     </div>
 
     <div>
         <label for="parkType">National Park Type</label><br/>
-        <select id="parkType" name="" size="5" required>
+        <select id="parkType" name="parkType" size="5" required>
             <!-- For each ParkType you should have one <option> like below  -->
-            <option>[parkType]</option>
+            <option th:each="pt : ${types}" th:text="${pt.name}" th:value="${pt.name}" th:selected="${park!=null && park.parkType==pt}">[parkType]</option>
         </select>
     </div>
 
     <div>
         <label for="location">ParkLocation</label><br/>
-        <select id="location" name="" required size="5">
+        <select id="location" name="locationId" required size="5">
             <!-- For each location you should have one <option> like below  -->
-            <option>[location.country], [location.continent]</option>
+            <option  th:each="l : ${locations}" th:text="${l.country} +', ' + ${l.continent} " th:value="${l.id}"  th:selected="${park!=null && park.location==l}">[location.country], [location.continent]</option>
         </select>
     </div>
 

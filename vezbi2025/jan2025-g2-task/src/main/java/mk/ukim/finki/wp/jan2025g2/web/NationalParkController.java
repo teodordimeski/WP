@@ -1,8 +1,22 @@
 package mk.ukim.finki.wp.jan2025g2.web;
 
+import lombok.AllArgsConstructor;
 import mk.ukim.finki.wp.jan2025g2.model.ParkType;
+import mk.ukim.finki.wp.jan2025g2.repository.NationalParkRepository;
+import mk.ukim.finki.wp.jan2025g2.service.NationalParkService;
+import mk.ukim.finki.wp.jan2025g2.service.ParkLocationService;
+import mk.ukim.finki.wp.jan2025g2.service.impl.NationalParkServiceImpl;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 
+@Controller
+@AllArgsConstructor
+@RequestMapping({"/","/national-parks"})
 public class NationalParkController {
+
+    private final NationalParkService nationalParkService;
+    private final ParkLocationService parkLocationService;
 
     /**
      * This method should use the "list.html" template to display all national parks.
@@ -21,14 +35,21 @@ public class NationalParkController {
      * @param pageSize   The number of items per page
      * @return The view "list.html"
      */
-    public String listAll(String name,
-                          Double areaSize,
-                          Double rating,
-                          ParkType parkType,
-                          Long locationId,
-                          Integer pageNum,
-                          Integer pageSize) {
-        return "";
+    @GetMapping
+    public String listAll(@RequestParam (required = false) String name,
+                          @RequestParam (required = false) Double areaSize,
+                          @RequestParam (required = false) Double rating,
+                          @RequestParam (required = false) ParkType parkType,
+                          @RequestParam (required = false) Long locationId,
+                          @RequestParam (defaultValue = "1") Integer pageNum,
+                          @RequestParam (defaultValue = "10") Integer pageSize,
+                          Model model) {
+
+        model.addAttribute("parks", nationalParkService.findPage(name, areaSize, rating, parkType, locationId, pageNum-1, pageSize));
+        model.addAttribute("types", ParkType.values());
+        model.addAttribute("locations", parkLocationService.listAll());
+
+        return "list";
     }
 
     /**
@@ -37,8 +58,13 @@ public class NationalParkController {
      *
      * @return The view "form.html".
      */
-    public String showAdd() {
-        return "";
+    @GetMapping("/add")
+    public String showAdd(Model model) {
+
+        model.addAttribute("types", ParkType.values());
+        model.addAttribute("locations", parkLocationService.listAll());
+
+        return "form";
     }
 
     /**
@@ -48,8 +74,14 @@ public class NationalParkController {
      *
      * @return The view "form.html".
      */
-    public String showEdit(Long id) {
-        return "";
+    @GetMapping("/edit/{id}")
+    public String showEdit(@PathVariable Long id, Model model) {
+
+        model.addAttribute("park", nationalParkService.findById(id));
+        model.addAttribute("types", ParkType.values());
+        model.addAttribute("locations", parkLocationService.listAll());
+
+        return "form";
     }
 
     /**
@@ -64,12 +96,16 @@ public class NationalParkController {
      * @param locationId The location ID
      * @return Redirects to the list of national parks on '/national-parks'
      */
-    public String create(String name,
-                         Double areaSize,
-                         Double rating,
-                         ParkType parkType,
-                         Long locationId) {
-        return "";
+    @PostMapping
+    public String create(@RequestParam(required = true) String name,
+                         @RequestParam(required = true) Double areaSize,
+                         @RequestParam(required = true) Double rating,
+                         @RequestParam(required = true) ParkType parkType,
+                         @RequestParam(required = true) Long locationId) {
+
+        nationalParkService.create(name, areaSize, rating, parkType, locationId);
+
+        return "redirect:/national-parks";
     }
 
     /**
@@ -85,13 +121,17 @@ public class NationalParkController {
      * @param locationId The location ID
      * @return Redirects to the list of national parks on '/national-parks'
      */
-    public String update(Long id,
-                         String name,
-                         Double areaSize,
-                         Double rating,
-                         ParkType parkType,
-                         Long locationId) {
-        return "";
+    @PostMapping("/{id}")
+    public String update(@PathVariable Long id,
+                         @RequestParam(required = false) String name,
+                         @RequestParam(required = false) Double areaSize,
+                         @RequestParam(required = false) Double rating,
+                         @RequestParam(required = false) ParkType parkType,
+                         @RequestParam(required = false) Long locationId) {
+
+        nationalParkService.update(id, name, areaSize, rating, parkType, locationId);
+
+        return "redirect:/national-parks";
     }
 
     /**
@@ -102,8 +142,12 @@ public class NationalParkController {
      * @param id The ID of the national park to delete
      * @return Redirects to the list of national parks
      */
-    public String delete(Long id) {
-        return "";
+    @PostMapping("/delete/{id}")
+    public String delete(@PathVariable Long id) {
+
+        nationalParkService.delete(id);
+
+        return "redirect:/national-parks";
     }
 
     /**
@@ -114,8 +158,12 @@ public class NationalParkController {
      * @param id The ID of the national park to close
      * @return Redirects to the list of national parks
      */
-    public String close(Long id) {
-        return "";
+    @PostMapping("/close/{id}")
+    public String close(@PathVariable Long id) {
+
+        nationalParkService.close(id);
+
+        return "redirect:/national-parks";
     }
 }
 
